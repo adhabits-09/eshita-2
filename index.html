@@ -730,10 +730,7 @@
 
         /* Meta Pixel */
         if (typeof fbq !== 'undefined') {
-            fbq('track', 'Contact');
-            fbq('track', 'Lead', { content_name: 'WhatsApp Form', content_source: sourceInfo.value });
-        }
-
+            fbq('track', 'Contact');        }
         /* WhatsApp redirect */
         const msg = encodeURIComponent(
             `Hello Eshita! 👋\n\nI'm interested in your digital mentorship program. Here are my details:\n\nName: ${name}\nPhone: ${phone}\nAge: ${age}\nLanguage: ${language}\nStatus: ${profession}\n\nPlease share next steps. Thank you! ✨`
